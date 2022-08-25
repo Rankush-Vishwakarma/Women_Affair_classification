@@ -58,7 +58,7 @@ This is simple implementation of logistic Regression classification on Women Aff
     -- there are in total we have 13 different features present in the dataset .
 
 ## I have collected the dataset from in-built sckit-learn dataset.
-   [ https://www.kaggle.com/datasets/iamsouvik/software-requirements-dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html)
+   [[ https://www.kaggle.com/datasets/iamsouvik/software-requirements-dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html)](https://www.statsmodels.org/dev/datasets/generated/fair.html)
     ### Preprocessing and visualize is taken place and tried to present a way for feature selection , cross validation, building confusion matrix.
           
 ## Machine Learning supervised model strategy 
