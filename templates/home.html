@@ -1,0 +1,136 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Women Affair Classification</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <style>
+            select {
+          // styles reset, including removing the default dropdown arrow
+          //appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          
+          //background-color: transparent;
+          border: none;
+          padding: 0 1em 0 0;
+          margin: 0;
+          width: 100%;
+          font-family: inherit;
+          font-size: inherit;
+          cursor: inherit;
+          line-height: inherit;
+        
+          // Stack above custom arrow
+          z-index: 1;
+        
+          // Remove focus outline, will add on alternate element
+          outline: none;
+        }
+            
+      
+      //Custom arrow
+    
+            form input {
+            position: relative;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            height: 40px;
+            border: none;
+            padding: 0 10px;
+            box-shadow: none;
+            outline: none;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+        }
+
+            .form.round {
+                border-radius: 40px;
+            }
+
+            .form.shutter-in {
+                border-bottom: 2px solid rgba(0, 0, 0, .2);
+                background: transparent;
+            }
+
+                .form.shutter-in:focus {
+                    border-color: rgba(0, 0, 0, .3);
+                    box-shadow: 0 -50px 0 #d5d5d5 inset;
+                }
+
+        .form label {
+            color: white;
+        }
+        body {
+            background-image: radial-gradient(circle, #353535, #313439, #27343c, #19353b, #0a3535);
+        }
+    </style>
+</head>
+<body padding:50px">
+    <div class="container" style="color:white; margin-top:10px; text-align:center;" >
+            <h1><b>Women Affair Classifier</b></h1>
+    </div>
+    <div class="container" style="width: 600px; margin-top: 30px; ">
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="id1" style="color: white">Rate_marriage</label><br><br>
+                <!--<input class="form-control" type="number""-->
+                  <!--     id="id1" placeholder="Enter Rate_marriage" step="1.0" value='0' name="Rate_marriage">"-->
+                  <div class="select">
+                  <select id="Rate_marriage" name="Rate_marriage" size="4" value = '1'>
+                    <option value=1 selected>very poor</option>
+                    <option value=2>poor</option>
+                    <option value=3>fair</option>
+                    <option value=4>good</option>
+                    <option value=5>very good</option>
+                  </select><br><br></div>
+                  
+            </div>
+
+            
+
+            <div class="form-group">
+                <label for="id3" style="color: white">Yrs_married</label>
+                <input class="form-control" type="number"
+                       id="id3" placeholder="Enter Yrs_married" step="0.5" value='0' name="Yrs_married">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="id5" style="color: white">Religious</label><br><br>
+                <!-- <input class="form-control" type="number"-->
+                      <!-- id="id5" placeholder="Enter Religious" step="1" value='0' name="Religious">-->
+                      <select id="Religious" name="Religious" size="4">
+                        <option value=1 selected>Not                          </option>
+                        <option value=2>Mildly                       </option>
+                        <option value=3>Fairly                       </option>
+                        <option value=4>Strongly                     </option>
+                      </select><br><br>
+            </div>
+           
+            <div class="form-group">
+                      <label for="id9" style="color: white">Affairs</label>
+                <input class="form-control" type="number"
+                       id="id9" placeholder="Enter Affairs" step="0.0001" value='0' name="Affairs">
+            </div>
+
+            <div class="container" style="margin-left:30%">
+                <button type="submit" class="btn btn-success" ;>
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
